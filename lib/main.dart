@@ -29,8 +29,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        fontFamily:
-            'Inter', // Assuming Inter font is available or added in pubspec.yaml
       ),
       // Navigate based on onboarding status
       home: onboardingComplete ? HomeScreen() : OnboardingScreen(),

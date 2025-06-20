@@ -38,7 +38,6 @@ dependencies:
   shared_preferences: ^2.5.3
   flutter_local_notifications: ^19.2.1
   timezone: ^0.10.1
-  rxdart: ^0.28.0
   dropdown_button2: ^2.3.9
 
 dev_dependencies:
