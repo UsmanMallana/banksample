@@ -3,7 +3,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 import 'dart:async';
 import 'package:banksample/screens/achievements_screen.dart';
-import 'package:banksample/services/notification_service.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
