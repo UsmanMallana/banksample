@@ -1,4 +1,3 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:banksample/screens/onboarding_screen.dart';
@@ -14,11 +13,7 @@ void main() async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool onboardingComplete = prefs.getBool('onboarding_complete') ?? false;
 
-  runApp(
-    DevicePreview(
-      builder: (context) => MyApp(onboardingComplete: onboardingComplete),
-    ),
-  );
+  runApp(MyApp(onboardingComplete: onboardingComplete));
 }
 
 class MyApp extends StatelessWidget {
