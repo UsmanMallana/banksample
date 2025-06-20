@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   double _pricePerSession = 0.0;
   int _timesPerDay = 0;
   Duration _abstainedDuration = Duration.zero;
-  final NotificationService _notificationService = NotificationService();
+  // final NotificationService _notificationService = NotificationService();
   Timer? _timer;
   bool _isLoading = true;
 
@@ -86,10 +86,10 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _checkAchievements() {
-    _notificationService.checkAndNotifyAchievements(
-      _abstainedDuration,
-      _calculateMoneySaved(),
-    );
+    // _notificationService.checkAndNotifyAchievements(
+    //   _abstainedDuration,
+    //   _calculateMoneySaved(),
+    // );
   }
 
   void _onItemTapped(int index) {

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:banksample/screens/onboarding_screen.dart';
 import 'package:banksample/screens/home_screen.dart';
-import 'package:banksample/services/notification_service.dart'; // Import the notification service
+// import 'package:banksample/services/notification_service.dart'; // Import the notification service
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Initialize notification service early
-  await NotificationService().initNotifications();
+  // await NotificationService().initNotifications();
 
   // Check if onboarding is complete
   SharedPreferences prefs = await SharedPreferences.getInstance();
